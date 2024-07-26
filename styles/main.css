@@ -73,6 +73,7 @@ body .container .row.row-12 {
 }
 body .container .row .col {
   padding: 1% 2%;
+  margin: 5px 0;
 }
 body .container .row .col.text-center {
   text-align: center;
