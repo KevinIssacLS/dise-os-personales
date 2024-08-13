@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
@@ -11,6 +10,7 @@ body .container {
   font-family: Montserrat;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
   grid-template-columns: 15rem 1fr;
   grid-template-areas: "navbar navbar" "sidebar content" "footer footer";
   text-align: justify;
@@ -560,31 +560,66 @@ body .container .mensaje.error .body {
   color: #DEE2E6;
   padding: 0.5rem;
 }
-body .container .presentación .slides {
+body .container .content-presentaciones {
+  display: flex;
+  align-content: center;
+  height: 100dvh;
+}
+body .container .presentacion {
+  display: flex;
+  align-content: center;
   position: relative;
-  width: 80%;
-  height: 80%;
-  background-color: #F8F9FA;
-  box-shadow: 0 0 10px #212529;
+  max-width: 70%;
+  aspect-ratio: 16/9;
+  margin: auto auto;
   overflow: hidden;
+  background-color: #b6b9bc;
+  border-radius: 8px;
+  padding: 20px;
 }
-body .container .presentación .slides .slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 100%;
-  left: 0;
+body .container .presentacion .presentacion-contenido {
+  margin: auto;
   display: flex;
-  align-items: center;
+}
+body .container .presentacion .presentacion-contenido .slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
   justify-content: center;
-  transition: top 0.5s ease-in-out;
+  flex-direction: column;
 }
-body .container .presentación .slides .slide.active {
-  top: 0;
-}
-body .container .presentación .navigation {
+body .container .presentacion .presentacion-contenido .slide.active {
   display: flex;
-  align-items: center;
+  opacity: 1;
+}
+body .container .presentacion .presentacion-contenido .slide .contenido {
+  padding: 50px;
+}
+body .container .presentacion .prev, body .container .presentacion .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #F8F9FA;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(188, 149, 92, 0.5);
+  color: #F8F9FA;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .presentacion .prev:hover, body .container .presentacion .next:hover {
+  background-color: rgba(141, 112, 69, 0.55);
+}
+body .container .presentacion .prev {
+  left: 10px;
+}
+body .container .presentacion .next {
+  right: 10px;
 }
 body .container nav {
   grid-area: navbar;
