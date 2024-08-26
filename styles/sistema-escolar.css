@@ -492,73 +492,87 @@ body .container .mensaje {
 }
 body .container .mensaje.primary .head {
   background-color: #de2178;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #F8F9FA;
+  font-size: 1rem;
 }
 body .container .mensaje.primary .body {
   background-color: #f7308b;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.secondary .head {
   background-color: #a3158e;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #F8F9FA;
+  font-size: 1rem;
 }
 body .container .mensaje.secondary .body {
   background-color: #b923a3;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.accent .head {
   background-color: #6708a5;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #F8F9FA;
+  font-size: 1rem;
 }
 body .container .mensaje.accent .body {
   background-color: #7915bb;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.info .head {
   background-color: #44b5d8;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #212529;
+  font-size: 1rem;
 }
 body .container .mensaje.info .body {
   background-color: #55ccf1;
   color: #343A40;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.warning .head {
   background-color: #e6b000;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #212529;
+  font-size: 1rem;
 }
 body .container .mensaje.warning .body {
   background-color: #ffc60d;
   color: #343A40;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.success .head {
   background-color: #17682c;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #F8F9FA;
+  font-size: 1rem;
 }
 body .container .mensaje.success .body {
   background-color: #257b3b;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .mensaje.error .head {
   background-color: #730e2a;
-  padding: 0.5rem;
+  padding: 0.2rem;
   color: #F8F9FA;
+  font-size: 1rem;
 }
 body .container .mensaje.error .body {
   background-color: #861b39;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 0.8rem;
 }
 body .container .content-presentaciones {
   display: flex;
