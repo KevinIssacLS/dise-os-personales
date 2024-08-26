@@ -1845,3 +1845,10 @@ body .container a {
     display: none;
   }
 }
+@media all and (max-width: 425px) {
+  body .container nav ul.elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 0.5rem;
+  }
+}
