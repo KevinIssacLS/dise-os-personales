@@ -1779,6 +1779,9 @@ body .container ul {
 body .container ul li::marker {
   color: #7209B7;
 }
+body .container img {
+  max-width: 80%;
+}
 body .container .portada {
   width: 21.59cm;
   height: 27.94cm;
