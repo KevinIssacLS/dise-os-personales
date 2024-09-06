@@ -640,7 +640,7 @@ body .container nav {
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 4% 16% 80%;
+  grid-template-columns: 8% 1fr 80%;
   grid-template-areas: "logo title elements";
   align-items: center;
   padding: 0.5rem 0;
@@ -652,9 +652,11 @@ body .container nav figure {
 }
 body .container nav figure.logo {
   grid-area: logo;
+  display: flex;
 }
 body .container nav figure.logo img {
   height: 100%;
+  margin: 0 0.25rem;
 }
 body .container nav figure.left {
   justify-content: left;
