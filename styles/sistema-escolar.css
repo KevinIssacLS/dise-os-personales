@@ -6,6 +6,8 @@
 }
 
 body .container {
+  max-width: 1440px;
+  margin: auto;
   padding: 0 1rem;
   font-family: Montserrat;
   display: grid;
@@ -640,7 +642,7 @@ body .container nav {
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 8% 1fr 80%;
+  grid-template-columns: 1fr 1fr 70%;
   grid-template-areas: "logo title elements";
   align-items: center;
   padding: 0.5rem 0;
