@@ -493,88 +493,88 @@ body .container .mensaje {
   overflow: hidden;
 }
 body .container .mensaje.primary .head {
-  background-color: #de2178;
+  background-color: #b91c64;
   padding: 0.2rem;
   color: #F8F9FA;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.primary .body {
-  background-color: #f7308b;
+  background-color: #f84697;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.secondary .head {
-  background-color: #a3158e;
+  background-color: #881177;
   padding: 0.2rem;
   color: #F8F9FA;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.secondary .body {
-  background-color: #b923a3;
+  background-color: #c03aad;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.accent .head {
-  background-color: #6708a5;
+  background-color: #560789;
   padding: 0.2rem;
   color: #F8F9FA;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.accent .body {
-  background-color: #7915bb;
+  background-color: #872ec2;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.info .head {
-  background-color: #44b5d8;
+  background-color: #3997b4;
   padding: 0.2rem;
   color: #212529;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.info .body {
-  background-color: #55ccf1;
+  background-color: #67d1f2;
   color: #343A40;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.warning .head {
-  background-color: #e6b000;
+  background-color: #bf9200;
   padding: 0.2rem;
   color: #212529;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.warning .body {
-  background-color: #ffc60d;
+  background-color: #ffcc26;
   color: #343A40;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.success .head {
-  background-color: #17682c;
+  background-color: #145725;
   padding: 0.2rem;
   color: #F8F9FA;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.success .body {
-  background-color: #257b3b;
+  background-color: #3c8950;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.error .head {
-  background-color: #730e2a;
+  background-color: #600b23;
   padding: 0.2rem;
   color: #F8F9FA;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 body .container .mensaje.error .body {
-  background-color: #861b39;
+  background-color: #93334e;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 body .container .content-presentaciones {
   display: flex;
