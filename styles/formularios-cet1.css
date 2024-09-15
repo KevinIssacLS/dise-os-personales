@@ -55,6 +55,44 @@ body .container .h6 {
   text-transform: uppercase;
   font-size: 0.27rem;
 }
+body .container.login {
+  margin: auto;
+}
+body .container.login .login-content {
+  background-color: #F8F9FA;
+  border-radius: 8px;
+  height: 100%;
+  padding: 1rem;
+  margin: auto;
+}
+body .container.login .login-content .login-element input {
+  border: none;
+  border-bottom: 1px solid #bc955c;
+  outline: none;
+  padding: 0.25rem 0;
+  width: 100%;
+  margin: 2rem auto 0.5rem auto;
+  font-family: Montserrat;
+  background-color: transparent;
+}
+body .container.login .login-content .login-element .btn.btn-form-submit {
+  background-color: #bc955c;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+body .container.login .login-content .login-element .btn.btn-form-cancel {
+  background-color: transparent;
+  border: 2px solid #691c32;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
 body .container.form .form-banner {
   overflow: hidden;
 }
@@ -68,6 +106,15 @@ body .container.form .section {
   margin: 0.5rem auto;
   overflow: hidden;
   font-size: medium;
+}
+body .container.form .section.required {
+  border: 2px solid #800F2F;
+  color: #800F2F;
+}
+body .container.form .section.required::after {
+  margin: 1rem;
+  width: 100%;
+  content: "Este campo es obligatorio";
 }
 body .container.form .section .form-head {
   padding: 1rem 0;
