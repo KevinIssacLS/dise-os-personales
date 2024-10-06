@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 * {
@@ -24,13 +25,103 @@ body .container.full .content {
   grid-area: content;
   padding: 0 0 0 0;
 }
+body .container.PDF {
+  font-size: 11pt;
+  font-family: "Courier New", Courier, monospace;
+  /* Aquí aplicamos la imagen de fondo */
+}
+body .container.PDF h1 {
+  text-align: center;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+body .container.PDF h2 {
+  text-align: center;
+  font-size: 18pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container.PDF h3 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container.PDF h4 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 400;
+}
+body .container.PDF h5 {
+  text-align: left;
+  font-size: 14pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 300;
+}
+body .container.PDF h6 {
+  text-align: left;
+  font-size: 14pt;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #F72585;
+  font-weight: 200;
+}
+body .container.PDF .header {
+  font-size: 7pt;
+  width: 100%;
+}
+body .container.PDF .content {
+  margin: 0cm -0.4cm 0cm -0.4cm;
+  font-size: 10pt;
+}
+body .container h1 {
+  text-align: center;
+  font-size: 25pt;
+  text-transform: uppercase;
+  color: #212529;
+}
+body .container h2 {
+  text-align: center;
+  font-size: 22pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container h3 {
+  text-align: left;
+  font-size: 20pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container h4 {
+  text-align: left;
+  font-size: 20pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 400;
+}
+body .container h5 {
+  text-align: left;
+  font-size: 18pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 300;
+}
+body .container h6 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 200;
+}
 body .container h1,
 body .container h2,
 body .container h3,
 body .container h4,
 body .container h5,
 body .container h6 {
-  text-align: center;
   text-transform: uppercase;
   padding: 0.5rem 0;
 }
@@ -736,6 +827,12 @@ body .container footer {
 body .container .sidebar {
   grid-area: sidebar;
   background-color: #F8F9FA;
+}
+body .container .sidebar h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  color: #343A40;
 }
 body .container .sidebar ul {
   list-style-type: none;
