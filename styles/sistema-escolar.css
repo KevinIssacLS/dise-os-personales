@@ -606,88 +606,109 @@ body .container .mensaje {
   overflow: hidden;
 }
 body .container .mensaje.primary .head {
-  background-color: #b91c64;
-  padding: 0.2rem;
-  color: #F8F9FA;
-  font-size: 0.9rem;
+  background-color: #de2178;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.primary .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.primary .body {
   background-color: #f84697;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.secondary .head {
-  background-color: #881177;
-  padding: 0.2rem;
-  color: #F8F9FA;
-  font-size: 0.9rem;
+  background-color: #a3158e;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.secondary .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.secondary .body {
   background-color: #c03aad;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.accent .head {
-  background-color: #560789;
-  padding: 0.2rem;
-  color: #F8F9FA;
-  font-size: 0.9rem;
+  background-color: #6708a5;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.accent .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.accent .body {
   background-color: #872ec2;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.info .head {
-  background-color: #3997b4;
-  padding: 0.2rem;
-  color: #212529;
-  font-size: 0.9rem;
+  background-color: #44b5d8;
+  padding: 0.1rem;
+  color: #343A40;
+}
+body .container .mensaje.info .head h2 {
+  color: #343A40;
+  font-size: 15pt;
 }
 body .container .mensaje.info .body {
   background-color: #67d1f2;
   color: #343A40;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.warning .head {
-  background-color: #bf9200;
-  padding: 0.2rem;
-  color: #212529;
-  font-size: 0.9rem;
+  background-color: #e6b000;
+  padding: 0.1rem;
+  color: #343A40;
+}
+body .container .mensaje.warning .head h2 {
+  color: #343A40;
+  font-size: 15pt;
 }
 body .container .mensaje.warning .body {
   background-color: #ffcc26;
   color: #343A40;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.success .head {
-  background-color: #145725;
-  padding: 0.2rem;
-  color: #F8F9FA;
-  font-size: 0.9rem;
+  background-color: #17682c;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.success .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.success .body {
   background-color: #3c8950;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .mensaje.error .head {
-  background-color: #600b23;
-  padding: 0.2rem;
-  color: #F8F9FA;
-  font-size: 0.9rem;
+  background-color: #730e2a;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.error .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.error .body {
   background-color: #93334e;
   color: #DEE2E6;
   padding: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 10pt;
 }
 body .container .content-presentaciones {
   display: flex;
@@ -1896,10 +1917,10 @@ body .container dialog .modal-content .modal-footer {
   padding: 10px 5px;
   border-top: 1px solid #7209B7;
 }
-body .container ul {
+body .container ul, body .container ol {
   padding: 0 4rem;
 }
-body .container ul li::marker {
+body .container ul li::marker, body .container ol li::marker {
   color: #7209B7;
 }
 body .container img {
