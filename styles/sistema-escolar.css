@@ -745,7 +745,8 @@ body .container .presentacion .presentacion-contenido .slide.active {
 body .container .presentacion .presentacion-contenido .slide .contenido {
   padding: 50px;
 }
-body .container .presentacion .prev, body .container .presentacion .next {
+body .container .presentacion .prev,
+body .container .presentacion .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -762,7 +763,8 @@ body .container .presentacion .prev, body .container .presentacion .next {
   font-size: 0.9rem;
   text-decoration: none;
 }
-body .container .presentacion .prev:hover, body .container .presentacion .next:hover {
+body .container .presentacion .prev:hover,
+body .container .presentacion .next:hover {
   background-color: rgba(86, 7, 137, 0.55);
 }
 body .container .presentacion .prev {
@@ -1835,6 +1837,7 @@ body .container .menu.menu-primary .row .col .menu-option .menu-img img {
 body .container .menu.menu-primary .row .col .menu-option .menu-body {
   flex: 1 1 auto;
   padding: 10px 5px;
+  align-content: center;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-body.text-center {
   text-align: center;
@@ -1856,10 +1859,10 @@ body .container .menu.menu-primary .row .col .menu-option .menu-body .title {
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-body a {
   text-decoration: none;
-  color: #212529;
+  color: #343A40;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-footer {
-  color: #495057;
+  color: #343A40;
   flex-shrink: 0;
   font-size: small;
   padding: 10px 5px;
@@ -1887,7 +1890,457 @@ body .container .menu.menu-primary .row .col .menu-option .menu-footer.text-unse
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-footer a {
   text-decoration: none;
-  color: #495057;
+  color: #343A40;
+}
+body .container .menu.menu-secondary .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-accent .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-success .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-error .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-warning .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-info .row .col .menu-option {
+  border: 1px solid #F72585;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #F72585;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-img img {
+  width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+  align-content: center;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fedeed;
+  border-top: 1px solid #F72585;
+  text-transform: unset;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
 }
 body .container dialog {
   margin: auto;
@@ -1917,10 +2370,12 @@ body .container dialog .modal-content .modal-footer {
   padding: 10px 5px;
   border-top: 1px solid #7209B7;
 }
-body .container ul, body .container ol {
+body .container ul,
+body .container ol {
   padding: 0 4rem;
 }
-body .container ul li::marker, body .container ol li::marker {
+body .container ul li::marker,
+body .container ol li::marker {
   color: #7209B7;
 }
 body .container img {
