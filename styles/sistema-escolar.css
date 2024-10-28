@@ -81,10 +81,6 @@ body .container.PDF .content {
   margin: 0cm -0.4cm 0cm -0.4cm;
   font-size: 10pt;
 }
-body .container i {
-  color: #7209B7;
-  padding: 0 0.3rem;
-}
 body .container h1 {
   text-align: center;
   font-size: 25pt;
@@ -136,6 +132,10 @@ body .container h6 {
 body .container section {
   margin: 1rem 0;
   padding: 1rem 0;
+}
+body .container section i {
+  color: #7209B7;
+  padding: 0 0.3rem;
 }
 body .container hr {
   border: 1px solid #b984db;
@@ -2416,6 +2416,11 @@ body .container .portada {
   width: 21.59cm;
   height: 27.94cm;
   background-color: #7209B7;
+}
+body .container a {
+  text-decoration: none;
+  color: #7209B7;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
