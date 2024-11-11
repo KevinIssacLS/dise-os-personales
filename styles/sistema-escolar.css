@@ -14,7 +14,7 @@ body .container {
   max-width: 1440px;
   margin: auto;
   padding: 0 1rem;
-  font-family: Montserrat, "Courier New";
+  font-family: Geomanist, Montserrat;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
@@ -1048,7 +1048,7 @@ body .container form .element .form-label {
   padding: 5px 0;
 }
 body .container form .element .form-input {
-  font-family: Montserrat, "Courier New";
+  font-family: Geomanist, Montserrat;
   padding: 0.3rem 0;
   width: 100%;
   border: none;
@@ -1059,7 +1059,7 @@ body .container form .element .form-input.disabled {
   background-color: #edeeee;
 }
 body .container form .element .form-select {
-  font-family: Montserrat, "Courier New";
+  font-family: Geomanist, Montserrat;
   width: 100%;
   padding: 0.3rem 0;
   border: 1px solid #7209B7;
@@ -1079,7 +1079,7 @@ body .container form .element .form-text {
   min-height: 50px;
   max-height: 200px;
   outline: none;
-  font-family: Montserrat, "Courier New";
+  font-family: Geomanist, Montserrat;
 }
 body .container .card {
   border-radius: 4px;
