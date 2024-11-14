@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+  font-family: Geomanist;
+  src: url("https://kevinissacls.github.io/dise-os-personales/Fonts/Geomanist/Geomanist-Regular.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: #DEE2E6;
+  background-image: url("../../images/Fondo Blanco Repetitivo.svg");
+  background-repeat: repeat;
+  background-size: 50%; /* Ajusta el tamaño para crear el patrón */
+  width: 100vw;
+  height: 100vh;
+}
+body .container {
+  min-height: 100dvh;
+  font-family: Montserrat, "Courier New";
+  color: #F8F9FA;
+}
+body .container .error {
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  height: 100dvh;
+}
+body .container .error .number {
+  display: block;
+  text-align: center;
+  font-size: 3.5rem;
+  background-color: #F72585;
+  max-height: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px #7209B7;
+  display: grid;
+  align-content: center;
+}
+body .container .error .message {
+  background-color: rgba(33, 37, 41, 0.8);
+  padding: 1.5rem;
+  margin: 0 0 0 8rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  border-radius: 8px;
+  text-align: center;
+}
+body .container .error .message h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+body .container .error .message p {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+body .container .error .message .options {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+}
+body .container .error .message .options a {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0 0;
+  text-align: center;
+  color: #F8F9FA;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6.5px;
+  border: 1px solid #bc2ea8;
+  transition: 0.5s;
+}
+body .container .error .message .options a:hover {
+  background-color: #bc2ea8;
+}
