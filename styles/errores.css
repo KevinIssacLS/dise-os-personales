@@ -13,7 +13,7 @@
 body {
   min-height: 100dvh;
   background-color: #DEE2E6;
-  background-image: url("../../images/Fondo Blanco Repetitivo.svg");
+  background-image: url("https://kevinissacls.github.io/dise-os-personales/images/Fondo Blanco Repetitivo.svg");
   background-repeat: repeat;
   background-size: 50%; /* Ajusta el tamaño para crear el patrón */
   width: 100vw;
