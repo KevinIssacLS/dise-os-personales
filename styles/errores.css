@@ -34,12 +34,12 @@ body .container .error .number {
   display: block;
   text-align: center;
   font-size: 3.5rem;
-  background-color: #F72585;
+  background-color: #386641;
   max-height: 50%;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 0 70px #7209B7;
+  box-shadow: 0 0 0 70px #bc4749;
   display: grid;
   align-content: center;
 }
@@ -73,9 +73,9 @@ body .container .error .message .options a {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 6.5px;
-  border: 1px solid #bc2ea8;
+  border: 1px solid #b0ce68;
   transition: 0.5s;
 }
 body .container .error .message .options a:hover {
-  background-color: #bc2ea8;
+  background-color: #b0ce68;
 }
