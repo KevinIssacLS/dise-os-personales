@@ -48,6 +48,7 @@ body .container .foda .elements .element {
   justify-content: center;
   border: 1px solid #212529;
   color: #DEE2E6;
+  padding: 1rem;
 }
 body .container .foda .elements .element ul {
   list-style-type: none;
