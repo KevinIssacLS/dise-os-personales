@@ -26,7 +26,6 @@ body .container .foda {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 body .container .foda .elements {
   width: 90%;
