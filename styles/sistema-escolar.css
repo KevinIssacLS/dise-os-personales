@@ -1,19 +1,94 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@font-face {
+  font-family: Geomanist;
+  src: url("https://kevinissacls.github.io/dise-os-personales/Fonts/Geomanist/Geomanist-Regular.otf");
+}
 * {
   padding: 0;
   margin: 0;
 }
 
 body .container {
+  max-width: 1440px;
+  margin: auto;
   padding: 0 1rem;
-  font-family: Montserrat;
+  font-family: Montserrat, "Courier New";
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
   grid-template-columns: 15rem 1fr;
   grid-template-areas: "navbar navbar" "sidebar content" "footer footer";
   text-align: justify;
+}
+body .container .foda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .foda .elements {
+  width: 90%;
+  min-height: 1fr;
+  padding: 1rem;
+  background-color: rgba(33, 37, 41, 0.5);
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  border-radius: 10px;
+  grid-template-areas: "f o" "d a";
+}
+body .container .foda .elements .letra {
+  color: #F8F9FA;
+  text-align: center;
+}
+body .container .foda .elements .element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #212529;
+  color: #DEE2E6;
+  padding: 1rem;
+}
+body .container .foda .elements .element ul {
+  list-style-type: none;
+}
+body .container .foda .elements .element ul li {
+  padding: 0.5rem 0;
+}
+body .container .foda .elements .element .letra {
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+body .container .foda .elements .element ul {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+body .container .foda .elements .element:hover .letra {
+  opacity: 0;
+  visibility: hidden;
+}
+body .container .foda .elements .element:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+body .container .foda .elements .f {
+  grid-area: f;
+}
+body .container .foda .elements .o {
+  grid-area: o;
+}
+body .container .foda .elements .d {
+  grid-area: d;
+}
+body .container .foda .elements .a {
+  grid-area: a;
+}
+body .container .maslow {
+  margin: 1rem 0;
 }
 body .container.full {
   grid-template-areas: "navbar navbar" "content content" "footer footer";
@@ -22,15 +97,117 @@ body .container.full .content {
   grid-area: content;
   padding: 0 0 0 0;
 }
+body .container.PDF {
+  font-size: 11pt;
+  font-family: "Courier New", Courier, monospace;
+  /* Aquí aplicamos la imagen de fondo */
+}
+body .container.PDF h1 {
+  text-align: center;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+body .container.PDF h2 {
+  text-align: center;
+  font-size: 18pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container.PDF h3 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container.PDF h4 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 400;
+}
+body .container.PDF h5 {
+  text-align: left;
+  font-size: 14pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 300;
+}
+body .container.PDF h6 {
+  text-align: left;
+  font-size: 14pt;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #F72585;
+  font-weight: 200;
+}
+body .container.PDF .header {
+  font-size: 7pt;
+  width: 100%;
+}
+body .container.PDF .content {
+  margin: 0cm -0.4cm 0cm -0.4cm;
+  font-size: 10pt;
+}
+body .container h1 {
+  text-align: center;
+  font-size: 25pt;
+  text-transform: uppercase;
+  color: #212529;
+}
+body .container h2 {
+  text-align: center;
+  font-size: 22pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container h3 {
+  text-align: left;
+  font-size: 20pt;
+  text-transform: uppercase;
+  color: #F72585;
+}
+body .container h4 {
+  text-align: left;
+  font-size: 20pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 400;
+}
+body .container h5 {
+  text-align: left;
+  font-size: 18pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 300;
+}
+body .container h6 {
+  text-align: left;
+  font-size: 16pt;
+  text-transform: uppercase;
+  color: #F72585;
+  font-weight: 200;
+}
 body .container h1,
 body .container h2,
 body .container h3,
 body .container h4,
 body .container h5,
 body .container h6 {
-  text-align: center;
   text-transform: uppercase;
   padding: 0.5rem 0;
+}
+body .container section {
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+body .container section i {
+  color: #7209B7;
+  padding: 0 0.3rem;
+}
+body .container hr {
+  border: 1px solid #b984db;
+  margin: 1rem 0;
 }
 body .container .row {
   display: grid;
@@ -85,6 +262,18 @@ body .container .row .col.text-right {
   text-align: right;
 }
 body .container .row .col.text-justify {
+  text-align: justify;
+}
+body .container .row .col .text-center {
+  text-align: center;
+}
+body .container .row .col .text-left {
+  text-align: left;
+}
+body .container .row .col .text-right {
+  text-align: right;
+}
+body .container .row .col .text-justify {
   text-align: justify;
 }
 body .container .w-1 {
@@ -485,6 +674,140 @@ body .container .btn.btn-success {
 body .container .btn.btn-success:hover {
   background-color: #17682c;
 }
+body .container .btn.btn-pdf {
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #7209B7;
+  color: #F8F9FA;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 60px 20px 0 0;
+}
+body .container .btn.btn-pdf:hover {
+  background-color: #6708a5;
+}
+body .container .btn.btn-ol-primary {
+  border: 1px solid #F72585;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #F72585;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-primary:hover {
+  background-color: #de2178;
+  color: #F8F9FA;
+}
+body .container .btn.btn-ol-secondary {
+  border: 1px solid #B5179E;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #B5179E;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-secondary:hover {
+  background-color: #a3158e;
+  color: #F8F9FA;
+}
+body .container .btn.btn-ol-accent {
+  border: 1px solid #7209B7;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #7209B7;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-accent:hover {
+  background-color: #6708a5;
+  color: #F8F9FA;
+}
+body .container .btn.btn-ol-info {
+  border: 1px solid #4CC9F0;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #4CC9F0;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-info:hover {
+  background-color: #44b5d8;
+  color: #212529;
+}
+body .container .btn.btn-ol-advertencia {
+  border: 1px solid #ffc300;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #ffc300;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-advertencia:hover {
+  background-color: #e6b000;
+  color: #212529;
+}
+body .container .btn.btn-ol-error {
+  border: 1px solid #800F2F;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #800F2F;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-error:hover {
+  background-color: #730e2a;
+  color: #F8F9FA;
+}
+body .container .btn.btn-ol-success {
+  border: 1px solid #1a7431;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #1a7431;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+body .container .btn.btn-ol-success:hover {
+  background-color: #17682c;
+  color: #F8F9FA;
+}
+body .container .btn.btn-ol-pdf {
+  border: 1px solid #7209B7;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #7209B7;
+  border-radius: 4px;
+  transition: 0.5s;
+  font-size: 0.9rem;
+  text-decoration: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 60px 20px 0 0;
+}
+body .container .btn.btn-ol-pdf:hover {
+  background-color: #6708a5;
+  color: #F8F9FA;
+}
 body .container .mensaje {
   margin: 10px 0;
   border-radius: 0 0 10px 10px;
@@ -492,73 +815,108 @@ body .container .mensaje {
 }
 body .container .mensaje.primary .head {
   background-color: #de2178;
-  padding: 0.5rem;
-  color: #F8F9FA;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.primary .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.primary .body {
-  background-color: #f7308b;
+  background-color: #f84697;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.secondary .head {
   background-color: #a3158e;
-  padding: 0.5rem;
-  color: #F8F9FA;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.secondary .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.secondary .body {
-  background-color: #b923a3;
+  background-color: #c03aad;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.accent .head {
   background-color: #6708a5;
-  padding: 0.5rem;
-  color: #F8F9FA;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.accent .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.accent .body {
-  background-color: #7915bb;
+  background-color: #872ec2;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.info .head {
   background-color: #44b5d8;
-  padding: 0.5rem;
-  color: #212529;
+  padding: 0.1rem;
+  color: #343A40;
+}
+body .container .mensaje.info .head h2 {
+  color: #343A40;
+  font-size: 15pt;
 }
 body .container .mensaje.info .body {
-  background-color: #55ccf1;
+  background-color: #67d1f2;
   color: #343A40;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.warning .head {
   background-color: #e6b000;
-  padding: 0.5rem;
-  color: #212529;
+  padding: 0.1rem;
+  color: #343A40;
+}
+body .container .mensaje.warning .head h2 {
+  color: #343A40;
+  font-size: 15pt;
 }
 body .container .mensaje.warning .body {
-  background-color: #ffc60d;
+  background-color: #ffcc26;
   color: #343A40;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.success .head {
   background-color: #17682c;
-  padding: 0.5rem;
-  color: #F8F9FA;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.success .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.success .body {
-  background-color: #257b3b;
+  background-color: #3c8950;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .mensaje.error .head {
   background-color: #730e2a;
-  padding: 0.5rem;
-  color: #F8F9FA;
+  padding: 0.1rem;
+  color: #DEE2E6;
+}
+body .container .mensaje.error .head h2 {
+  color: #DEE2E6;
+  font-size: 15pt;
 }
 body .container .mensaje.error .body {
-  background-color: #861b39;
+  background-color: #93334e;
   color: #DEE2E6;
   padding: 0.5rem;
+  font-size: 10pt;
 }
 body .container .content-presentaciones {
   display: flex;
@@ -595,7 +953,8 @@ body .container .presentacion .presentacion-contenido .slide.active {
 body .container .presentacion .presentacion-contenido .slide .contenido {
   padding: 50px;
 }
-body .container .presentacion .prev, body .container .presentacion .next {
+body .container .presentacion .prev,
+body .container .presentacion .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -612,7 +971,8 @@ body .container .presentacion .prev, body .container .presentacion .next {
   font-size: 0.9rem;
   text-decoration: none;
 }
-body .container .presentacion .prev:hover, body .container .presentacion .next:hover {
+body .container .presentacion .prev:hover,
+body .container .presentacion .next:hover {
   background-color: rgba(86, 7, 137, 0.55);
 }
 body .container .presentacion .prev {
@@ -626,11 +986,18 @@ body .container nav {
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 4% 16% 80%;
+  grid-template-columns: 1fr 1fr 70%;
   grid-template-areas: "logo title elements";
   align-items: center;
   padding: 0.5rem 0;
   border-bottom: 1px solid #7209B7;
+}
+body .container nav.full {
+  grid-template-columns: 1fr 80%;
+  grid-template-areas: "logo elements";
+}
+body .container nav.full ul.title {
+  display: none;
 }
 body .container nav figure {
   height: 2rem;
@@ -638,9 +1005,11 @@ body .container nav figure {
 }
 body .container nav figure.logo {
   grid-area: logo;
+  display: flex;
 }
 body .container nav figure.logo img {
   height: 100%;
+  margin: 0 0.25rem;
 }
 body .container nav figure.left {
   justify-content: left;
@@ -665,7 +1034,6 @@ body .container nav ul.elements {
 body .container nav ul li {
   padding: 0 0.5rem;
   color: #495057;
-  text-transform: unset;
 }
 body .container nav ul li.text-capitalize {
   text-transform: capitalize;
@@ -715,9 +1083,39 @@ body .container footer {
   padding: auto;
   padding: 1rem 0;
 }
+body .container footer.text-center {
+  text-align: center;
+}
+body .container footer.text-left {
+  text-align: left;
+}
+body .container footer.text-right {
+  text-align: right;
+}
+body .container footer.text-justify {
+  text-align: justify;
+}
+body .container footer .text-center {
+  text-align: center;
+}
+body .container footer .text-left {
+  text-align: left;
+}
+body .container footer .text-right {
+  text-align: right;
+}
+body .container footer .text-justify {
+  text-align: justify;
+}
 body .container .sidebar {
   grid-area: sidebar;
   background-color: #F8F9FA;
+}
+body .container .sidebar h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  color: #343A40;
 }
 body .container .sidebar ul {
   list-style-type: none;
@@ -842,44 +1240,44 @@ body .container .table table.info tr:nth-child(odd) {
   background-color: #dbf4fc;
   color: #212529;
 }
-body .container form {
+body .container form, body .container .form {
   width: 80%;
   margin: auto;
 }
-body .container form.full {
+body .container form.full, body .container .form.full {
   width: 100%;
 }
-body .container form .element {
+body .container form .element, body .container .form .element {
   padding: 1rem 0;
 }
-body .container form .element .form-label {
+body .container form .element .form-label, body .container .form .element .form-label {
   color: #212529;
   padding: 5px 0;
 }
-body .container form .element .form-input {
-  font-family: Montserrat;
+body .container form .element .form-input, body .container .form .element .form-input {
+  font-family: Montserrat, "Courier New";
   padding: 0.3rem 0;
   width: 100%;
   border: none;
   border-bottom: 1px solid #7209B7;
   outline: none;
 }
-body .container form .element .form-input.disabled {
+body .container form .element .form-input.disabled, body .container .form .element .form-input.disabled {
   background-color: #edeeee;
 }
-body .container form .element .form-select {
-  font-family: Montserrat;
+body .container form .element .form-select, body .container .form .element .form-select {
+  font-family: Montserrat, "Courier New";
   width: 100%;
   padding: 0.3rem 0;
   border: 1px solid #7209B7;
   outline: none;
   border-radius: 4px;
 }
-body .container form .element .form-select option {
+body .container form .element .form-select option, body .container .form .element .form-select option {
   background-color: #DEE2E6;
   padding: 10px 0;
 }
-body .container form .element .form-text {
+body .container form .element .form-text, body .container .form .element .form-text {
   padding: 5px;
   border: 1px solid #7209B7;
   border-radius: 4px;
@@ -888,7 +1286,7 @@ body .container form .element .form-text {
   min-height: 50px;
   max-height: 200px;
   outline: none;
-  font-family: Montserrat;
+  font-family: Montserrat, "Courier New";
 }
 body .container .card {
   border-radius: 4px;
@@ -921,6 +1319,18 @@ body .container .card.card-primary.card-ol .card-body.text-right {
 body .container .card.card-primary.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-primary.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-primary.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-primary.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-primary.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-primary.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #f83b91;
@@ -938,6 +1348,18 @@ body .container .card.card-primary.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-primary.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-primary.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-primary.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-primary.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-primary.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-primary.card-ol .card-footer.left {
@@ -976,6 +1398,18 @@ body .container .card.card-primary.card-bg .card-body.text-right {
 body .container .card.card-primary.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-primary.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-primary.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-primary.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-primary.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-primary.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #f83b91;
@@ -992,6 +1426,18 @@ body .container .card.card-primary.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-primary.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-primary.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-primary.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-primary.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-primary.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-primary.card-bg .card-footer.left {
@@ -1030,6 +1476,18 @@ body .container .card.card-secondary.card-ol .card-body.text-right {
 body .container .card.card-secondary.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-secondary.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-secondary.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-secondary.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-secondary.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-secondary.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #bc2ea8;
@@ -1047,6 +1505,18 @@ body .container .card.card-secondary.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-secondary.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-secondary.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-secondary.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-secondary.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-secondary.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-secondary.card-ol .card-footer.left {
@@ -1085,6 +1555,18 @@ body .container .card.card-secondary.card-bg .card-body.text-right {
 body .container .card.card-secondary.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-secondary.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-secondary.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-secondary.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-secondary.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-secondary.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #bc2ea8;
@@ -1101,6 +1583,18 @@ body .container .card.card-secondary.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-secondary.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-secondary.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-secondary.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-secondary.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-secondary.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-secondary.card-bg .card-footer.left {
@@ -1139,6 +1633,18 @@ body .container .card.card-accent.card-ol .card-body.text-right {
 body .container .card.card-accent.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-accent.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-accent.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-accent.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-accent.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-accent.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #8022be;
@@ -1156,6 +1662,18 @@ body .container .card.card-accent.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-accent.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-accent.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-accent.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-accent.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-accent.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-accent.card-ol .card-footer.left {
@@ -1194,6 +1712,18 @@ body .container .card.card-accent.card-bg .card-body.text-right {
 body .container .card.card-accent.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-accent.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-accent.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-accent.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-accent.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-accent.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #8022be;
@@ -1210,6 +1740,18 @@ body .container .card.card-accent.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-accent.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-accent.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-accent.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-accent.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-accent.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-accent.card-bg .card-footer.left {
@@ -1248,6 +1790,18 @@ body .container .card.card-success.card-ol .card-body.text-right {
 body .container .card.card-success.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-success.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-success.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-success.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-success.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-success.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #318246;
@@ -1265,6 +1819,18 @@ body .container .card.card-success.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-success.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-success.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-success.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-success.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-success.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-success.card-ol .card-footer.left {
@@ -1303,6 +1869,18 @@ body .container .card.card-success.card-bg .card-body.text-right {
 body .container .card.card-success.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-success.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-success.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-success.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-success.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-success.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #318246;
@@ -1319,6 +1897,18 @@ body .container .card.card-success.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-success.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-success.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-success.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-success.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-success.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-success.card-bg .card-footer.left {
@@ -1357,6 +1947,18 @@ body .container .card.card-error.card-ol .card-body.text-right {
 body .container .card.card-error.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-error.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-error.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-error.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-error.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-error.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #8d2744;
@@ -1374,6 +1976,18 @@ body .container .card.card-error.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-error.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-error.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-error.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-error.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-error.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-error.card-ol .card-footer.left {
@@ -1412,6 +2026,18 @@ body .container .card.card-error.card-bg .card-body.text-right {
 body .container .card.card-error.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-error.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-error.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-error.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-error.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-error.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #8d2744;
@@ -1428,6 +2054,18 @@ body .container .card.card-error.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-error.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-error.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-error.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-error.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-error.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-error.card-bg .card-footer.left {
@@ -1466,6 +2104,18 @@ body .container .card.card-warning.card-ol .card-body.text-right {
 body .container .card.card-warning.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-warning.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-warning.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-warning.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-warning.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-warning.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #ffc91a;
@@ -1483,6 +2133,18 @@ body .container .card.card-warning.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-warning.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-warning.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-warning.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-warning.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-warning.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-warning.card-ol .card-footer.left {
@@ -1521,6 +2183,18 @@ body .container .card.card-warning.card-bg .card-body.text-right {
 body .container .card.card-warning.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-warning.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-warning.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-warning.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-warning.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-warning.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #ffc91a;
@@ -1537,6 +2211,18 @@ body .container .card.card-warning.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-warning.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-warning.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-warning.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-warning.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-warning.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-warning.card-bg .card-footer.left {
@@ -1575,6 +2261,18 @@ body .container .card.card-info.card-ol .card-body.text-right {
 body .container .card.card-info.card-ol .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-info.card-ol .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-info.card-ol .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-info.card-ol .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-info.card-ol .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-info.card-ol .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #5ecef2;
@@ -1592,6 +2290,18 @@ body .container .card.card-info.card-ol .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-info.card-ol .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-info.card-ol .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-info.card-ol .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-info.card-ol .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-info.card-ol .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-info.card-ol .card-footer.left {
@@ -1630,6 +2340,18 @@ body .container .card.card-info.card-bg .card-body.text-right {
 body .container .card.card-info.card-bg .card-body.text-justify {
   text-align: justify;
 }
+body .container .card.card-info.card-bg .card-body .text-center {
+  text-align: center;
+}
+body .container .card.card-info.card-bg .card-body .text-left {
+  text-align: left;
+}
+body .container .card.card-info.card-bg .card-body .text-right {
+  text-align: right;
+}
+body .container .card.card-info.card-bg .card-body .text-justify {
+  text-align: justify;
+}
 body .container .card.card-info.card-bg .card-footer {
   padding: 5px 5px;
   border-top: 1px solid #5ecef2;
@@ -1646,6 +2368,18 @@ body .container .card.card-info.card-bg .card-footer.text-right {
   text-align: right;
 }
 body .container .card.card-info.card-bg .card-footer.text-justify {
+  text-align: justify;
+}
+body .container .card.card-info.card-bg .card-footer .text-center {
+  text-align: center;
+}
+body .container .card.card-info.card-bg .card-footer .text-left {
+  text-align: left;
+}
+body .container .card.card-info.card-bg .card-footer .text-right {
+  text-align: right;
+}
+body .container .card.card-info.card-bg .card-footer .text-justify {
   text-align: justify;
 }
 body .container .card.card-info.card-bg .card-footer.left {
@@ -1671,7 +2405,7 @@ body .container .menu.menu-primary .row .col .menu-option .menu-img {
   border-bottom: 1px solid #F72585;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-img img {
-  width: 100%;
+  min-width: 100%;
   object-fit: cover;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-body {
@@ -1690,24 +2424,35 @@ body .container .menu.menu-primary .row .col .menu-option .menu-body.text-right 
 body .container .menu.menu-primary .row .col .menu-option .menu-body.text-justify {
   text-align: justify;
 }
+body .container .menu.menu-primary .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-primary .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-primary .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-primary .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
 body .container .menu.menu-primary .row .col .menu-option .menu-body .title {
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  font-size: medium;
+  font-size: 15pt;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-body a {
   text-decoration: none;
-  color: #212529;
+  color: #343A40;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-footer {
-  color: #495057;
+  color: #343A40;
   flex-shrink: 0;
   font-size: small;
   padding: 10px 5px;
   background-color: #fedeed;
   border-top: 1px solid #F72585;
-  text-transform: unset;
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-footer.text-capitalize {
   text-transform: capitalize;
@@ -1729,7 +2474,517 @@ body .container .menu.menu-primary .row .col .menu-option .menu-footer.text-unse
 }
 body .container .menu.menu-primary .row .col .menu-option .menu-footer a {
   text-decoration: none;
-  color: #495057;
+  color: #343A40;
+}
+body .container .menu.menu-secondary .row .col .menu-option {
+  border: 1px solid #B5179E;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #B5179E;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #f4dcf0;
+  border-top: 1px solid #B5179E;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-secondary .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-accent .row .col .menu-option {
+  border: 1px solid #7209B7;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #7209B7;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #eadaf4;
+  border-top: 1px solid #7209B7;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-accent .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-success .row .col .menu-option {
+  border: 1px solid #1a7431;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #1a7431;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #ddeae0;
+  border-top: 1px solid #1a7431;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-success .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-error .row .col .menu-option {
+  border: 1px solid #800F2F;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #800F2F;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #ecdbe0;
+  border-top: 1px solid #800F2F;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-error .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-warning .row .col .menu-option {
+  border: 1px solid #ffc300;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #ffc300;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #fff6d9;
+  border-top: 1px solid #ffc300;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-warning .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-info .row .col .menu-option {
+  border: 1px solid #4CC9F0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-img {
+  height: 100px;
+  overflow: hidden;
+  border-bottom: 1px solid #4CC9F0;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-img img {
+  min-width: 100%;
+  object-fit: cover;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body {
+  flex: 1 1 auto;
+  padding: 10px 5px;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-center {
+  text-align: center;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-left {
+  text-align: left;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-right {
+  text-align: right;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body.text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .text-center {
+  text-align: center;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .text-left {
+  text-align: left;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .text-right {
+  text-align: right;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .text-justify {
+  text-align: justify;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15pt;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-body a {
+  text-decoration: none;
+  color: #343A40;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer {
+  color: #343A40;
+  flex-shrink: 0;
+  font-size: small;
+  padding: 10px 5px;
+  background-color: #e4f7fd;
+  border-top: 1px solid #4CC9F0;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-capitalize {
+  text-transform: capitalize;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-lowercase {
+  text-transform: lowercase;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-uppercase {
+  text-transform: uppercase;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-inherit {
+  text-transform: inherit;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-initial {
+  text-transform: initial;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer.text-unset {
+  text-transform: unset;
+}
+body .container .menu.menu-info .row .col .menu-option .menu-footer a {
+  text-decoration: none;
+  color: #343A40;
 }
 body .container dialog {
   margin: auto;
@@ -1759,11 +3014,16 @@ body .container dialog .modal-content .modal-footer {
   padding: 10px 5px;
   border-top: 1px solid #7209B7;
 }
-body .container ul {
+body .container ul,
+body .container ol {
   padding: 0 4rem;
 }
-body .container ul li::marker {
+body .container ul li::marker,
+body .container ol li::marker {
   color: #7209B7;
+}
+body .container img {
+  max-width: 80%;
 }
 body .container .portada {
   width: 21.59cm;
@@ -1800,6 +3060,28 @@ body .container a {
   body .container .row {
     display: block;
   }
+  body .container .foda .elements {
+    grid-template-areas: "f" "o" "d" "a";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  body .container .foda .elements .element {
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-areas: "letra lista";
+  }
+  body .container .foda .elements .element .letra {
+    grid-area: letra;
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    position: relative;
+  }
+  body .container .foda .elements .element ul {
+    grid-area: lista;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 @media all and (max-width: 768px) {
   body .container {
@@ -1829,5 +3111,35 @@ body .container a {
   }
   body .container .sidebar {
     display: none;
+  }
+}
+@media all and (max-width: 425px) {
+  body .container nav ul.elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 0.5rem;
+  }
+  body .container .foda .elements {
+    grid-template-areas: "f" "o" "d" "a";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  body .container .foda .elements .element {
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-areas: "letra letra" "lista lista";
+  }
+  body .container .foda .elements .element .letra {
+    grid-area: letra;
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    position: relative;
+  }
+  body .container .foda .elements .element ul {
+    grid-area: lista;
+    visibility: visible;
+    opacity: 1;
+    padding: 1rem;
   }
 }
