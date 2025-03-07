@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (params) {
-    const Header = `
+    var Header = `
     <header>
     <nav>
         <picture>
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function (params) {
 </header>
     `;
 
-    const Footer=`
+    var Footer=`
     <footer>
     <div class="logo">
         <figure>
