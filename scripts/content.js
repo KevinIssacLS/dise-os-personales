@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function (params) {
     '<header>'+
     '<nav>'+
         '<picture>'+
-            '<img src="" alt="">'+
+            '<img src="http://kevin-issac-ls.epizy.com/images/logo-%C3%ADcono.png" alt="">'+
         '</picture>'+
-        '<div class="title"></div>'+
+        '<div class="title"><p>Nombre de la página</p></div>'+
         '<div class="links"></div>'+
     '</nav>'+
 '</header>';
@@ -21,15 +21,19 @@ document.addEventListener('DOMContentLoaded', function (params) {
         '<ul>'+
             '<li><a href="">Principal</a></li>'+
             '<li><a href="">Portafolio</a></li>'+
+            '<li><a href="">Mapa de sitio</a></li>'+
         '</ul>'+
     '</div>'+
-    '<div class="contact">'+
+    '<div class="social">'+
         '<ul>'+
             '<li><a href=""></a></li>'+
         '</ul>'+
     '</div>'+
 '</footer>';
 
-this.body.prepend(Header);
-this.body.append(Footer);
+// Agregar navbar al inicio del body
+document.body.insertAdjacentHTML('afterbegin', Header);
+
+// Agregar footer al final del body
+document.body.insertAdjacentHTML('beforeend', Footer);
 })
